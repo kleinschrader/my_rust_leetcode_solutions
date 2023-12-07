@@ -1,4 +1,4 @@
-## This is personal collection of my rust leetcode solutions.
+## This is a personal collection of my rust leetcode solutions.
 
 Whenever i get the time or motivation to do a leetcode problem i will add them into [examples](/examples/) directory.
 This is mainly so i can keep a central repository of all my solutions.
