@@ -1,6 +1,4 @@
-fn main() {
-
-}
+fn main() {}
 
 #[allow(dead_code)]
 pub fn largest_odd_number(num: String) -> String {
@@ -17,12 +15,8 @@ pub fn largest_odd_number(num: String) -> String {
     }
 
     match first_odd {
-        Some(r) => {
-            num[0..(r+1)].to_string()
-        },
-        None => {
-            "".to_string()
-        }
+        Some(r) => num[0..(r + 1)].to_string(),
+        None => "".to_string(),
     }
 }
 
@@ -32,21 +26,21 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let r= largest_odd_number("52".to_string());
+        let r = largest_odd_number("52".to_string());
 
         assert_eq!(r, "5");
     }
 
     #[test]
     fn test_case_2() {
-        let r= largest_odd_number("4206".to_string());
+        let r = largest_odd_number("4206".to_string());
 
         assert_eq!(r, "");
     }
 
     #[test]
     fn test_case_3() {
-        let r= largest_odd_number("35427".to_string());
+        let r = largest_odd_number("35427".to_string());
 
         assert_eq!(r, "35427");
     }

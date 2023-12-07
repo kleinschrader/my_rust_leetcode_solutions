@@ -1,6 +1,4 @@
-fn main() {
-
-}
+fn main() {}
 
 #[allow(dead_code)]
 fn is_reachable_at_time(sx: i32, sy: i32, fx: i32, fy: i32, t: i32) -> bool {
@@ -18,7 +16,7 @@ fn is_reachable_at_time(sx: i32, sy: i32, fx: i32, fy: i32, t: i32) -> bool {
 
     let total_steps = diag_steps + straight_steps;
 
-   !(t < total_steps)
+    !(t < total_steps)
 }
 
 #[cfg(test)]
@@ -27,7 +25,7 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let r = is_reachable_at_time(2, 4, 7,7, 6);
+        let r = is_reachable_at_time(2, 4, 7, 7, 6);
         assert_eq!(r, true);
     }
 
@@ -39,19 +37,19 @@ mod tests {
 
     #[test]
     fn test_case_3() {
-        let r =is_reachable_at_time(1, 1, 1, 2, 0);
+        let r = is_reachable_at_time(1, 1, 1, 2, 0);
         assert_eq!(r, false);
     }
 
     #[test]
     fn test_case_4() {
-        let r =is_reachable_at_time(1, 2, 1, 2, 1);
+        let r = is_reachable_at_time(1, 2, 1, 2, 1);
         assert_eq!(r, false);
     }
 
     #[test]
     fn test_case_5() {
-        let r =is_reachable_at_time(1, 1, 1, 3, 2);
+        let r = is_reachable_at_time(1, 1, 1, 3, 2);
         assert_eq!(r, true);
     }
 }
